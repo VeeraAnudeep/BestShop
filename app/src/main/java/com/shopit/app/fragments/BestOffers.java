@@ -1,4 +1,4 @@
-package veera.bestshop.app.fragments;
+package com.shopit.app.fragments;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -10,8 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import veera.bestshop.app.R;
-import veera.bestshop.app.adapters.BestOffersRecyclerViewAdapter;
+import com.shopit.app.R;
+import com.shopit.app.adapters.BestOffersRecyclerViewAdapter;
 
 
 /**

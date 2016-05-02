@@ -1,11 +1,11 @@
-package veera.bestshop.app.adapters;
+package com.shopit.app.adapters;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
-import veera.bestshop.app.fragments.BestOffers;
-import veera.bestshop.app.fragments.CategoryFragment;
+import com.shopit.app.fragments.BestOffers;
+import com.shopit.app.fragments.CategoryFragment;
 
 /**
  * Created by Veera on 4/10/2016.

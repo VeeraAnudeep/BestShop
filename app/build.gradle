@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.3"
 
     defaultConfig {
-        applicationId "veera.bestshop.app"
+        applicationId "com.shopit.app"
         minSdkVersion 19
         targetSdkVersion 23
         versionCode 1
@@ -27,4 +27,5 @@ dependencies {
     compile 'com.android.support:support-v4:23.3.0'
     compile 'com.android.support:cardview-v7:23.3.0'
     compile 'com.android.support:recyclerview-v7:23.3.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
 }

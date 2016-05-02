@@ -1,12 +1,12 @@
-package veera.bestshop.app.dbManager.dbHelper;
+package com.shopit.app.dbManager.dbHelper;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
 import java.io.IOException;
 
-import veera.bestshop.app.BuildConfig;
-import veera.bestshop.app.dbManager.constants.DBConstants;
+import com.shopit.app.BuildConfig;
+import com.shopit.app.dbManager.constants.DBConstants;
 
 /**
  * Created by MohdNoufil on 07/03/16.

@@ -1,4 +1,4 @@
-package veera.bestshop.app.adapters;
+package com.shopit.app.adapters;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,7 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import veera.bestshop.app.R;
+import com.shopit.app.R;
 
 
 public class CategoryRecyclerViewAdapter extends RecyclerView.Adapter<CategoryRecyclerViewAdapter.ViewHolder> {

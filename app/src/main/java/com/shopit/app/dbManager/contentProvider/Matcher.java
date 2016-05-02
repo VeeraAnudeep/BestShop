@@ -1,4 +1,4 @@
-package veera.bestshop.app.dbManager.contentProvider;
+package com.shopit.app.dbManager.contentProvider;
 
 import android.content.UriMatcher;
 import android.net.Uri;

@@ -1,4 +1,4 @@
-package veera.bestshop.app.dbManager.dbHelper;
+package com.shopit.app.dbManager.dbHelper;
 
 import android.content.ContentValues;
 import android.content.Context;

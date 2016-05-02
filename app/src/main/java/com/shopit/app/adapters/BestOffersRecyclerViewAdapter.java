@@ -1,4 +1,4 @@
-package veera.bestshop.app.adapters;
+package com.shopit.app.adapters;
 
 import android.content.Context;
 import android.support.v4.content.ContextCompat;
@@ -9,7 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import veera.bestshop.app.R;
+import com.shopit.app.R;
 
 /**
  * Created by veera on 2/5/16.

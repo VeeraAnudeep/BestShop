@@ -1,4 +1,4 @@
-package veera.bestshop.app.dbManager.constants;
+package com.shopit.app.dbManager.constants;
 
 import android.content.ContentUris;
 import android.net.Uri;

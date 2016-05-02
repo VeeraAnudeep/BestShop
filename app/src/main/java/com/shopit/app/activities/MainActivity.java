@@ -1,4 +1,4 @@
-package veera.bestshop.app.activities;
+package com.shopit.app.activities;
 
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -13,8 +13,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import veera.bestshop.app.R;
-import veera.bestshop.app.adapters.PagerAdapter;
+import com.shopit.app.R;
+import com.shopit.app.adapters.PagerAdapter;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {

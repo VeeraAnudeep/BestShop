@@ -1,4 +1,4 @@
-package veera.bestshop.app.dbManager.contentProvider;
+package com.shopit.app.dbManager.contentProvider;
 
 import android.content.ContentProvider;
 import android.content.ContentResolver;
@@ -9,8 +9,8 @@ import android.net.Uri;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
-import veera.bestshop.app.dbManager.constants.DBConstants;
-import veera.bestshop.app.dbManager.dbHelper.DbHelper;
+import com.shopit.app.dbManager.constants.DBConstants;
+import com.shopit.app.dbManager.dbHelper.DbHelper;
 
 public class BaseProvider extends ContentProvider {
 
