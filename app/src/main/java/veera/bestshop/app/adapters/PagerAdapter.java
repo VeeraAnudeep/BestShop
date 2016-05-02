@@ -1,11 +1,11 @@
 package veera.bestshop.app.adapters;
 
-import android.support.annotation.StringDef;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
 
 import veera.bestshop.app.fragments.BestOffers;
+import veera.bestshop.app.fragments.CategoryFragment;
 
 /**
  * Created by Veera on 4/10/2016.
@@ -17,7 +17,19 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return BestOffers.newInstance("", "");
+        Fragment fragment = null;
+        switch (position) {
+            case 0:
+                fragment = new BestOffers().newInstance("", "");
+                break;
+            case 1:
+                fragment = new BestOffers().newInstance("", "");
+                break;
+            case 2:
+                fragment = new CategoryFragment().newInstance();
+                break;
+        }
+        return fragment;
     }
 
     @Override

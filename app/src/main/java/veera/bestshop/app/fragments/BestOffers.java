@@ -1,14 +1,17 @@
 package veera.bestshop.app.fragments;
 
 import android.content.Context;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.widget.SwipeRefreshLayout;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import veera.bestshop.app.R;
+import veera.bestshop.app.adapters.BestOffersRecyclerViewAdapter;
 
 
 /**
@@ -17,7 +20,7 @@ import veera.bestshop.app.R;
  * Use the {@link BestOffers#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class BestOffers extends Fragment {
+public class BestOffers extends Fragment implements SwipeRefreshLayout.OnRefreshListener {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -26,6 +29,8 @@ public class BestOffers extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+    private RecyclerView recyclerView;
+    private SwipeRefreshLayout swipeRefreshLayout;
 
     public BestOffers() {
         // Required empty public constructor
@@ -62,7 +67,13 @@ public class BestOffers extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_best_offers, container, false);
+        View view = inflater.inflate(R.layout.fragment_best_offers, container, false);
+        swipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipeRefreshLayout);
+        recyclerView = (RecyclerView) view.findViewById(R.id.recyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        BestOffersRecyclerViewAdapter adapter = new BestOffersRecyclerViewAdapter(getActivity());
+        recyclerView.setAdapter(adapter);
+        return view;
     }
 
 
@@ -74,5 +85,10 @@ public class BestOffers extends Fragment {
     @Override
     public void onDetach() {
         super.onDetach();
+    }
+
+    @Override
+    public void onRefresh() {
+        swipeRefreshLayout.setRefreshing(false);
     }
 }

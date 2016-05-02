@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category_list">
+        <item>Grocery</item>
+        <item>Men Fashion</item>
+        <item>Women Fashion</item>
+        <item>Kids Fashion</item>
+        <item>Stationary</item>
+        <item>Watch &amp; Co</item>
+        <item>Furniture</item>
+    </string-array>
+</resources>
