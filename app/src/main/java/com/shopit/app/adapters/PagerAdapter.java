@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.shopit.app.fragments.BestOffers;
 import com.shopit.app.fragments.CategoryFragment;
+import com.shopit.app.fragments.TopStoresFragment;
 
 /**
  * Created by Veera on 4/10/2016.
@@ -23,7 +24,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
                 fragment = new BestOffers().newInstance("", "");
                 break;
             case 1:
-                fragment = new BestOffers().newInstance("", "");
+                fragment = new TopStoresFragment().newInstance();
                 break;
             case 2:
                 fragment = new CategoryFragment().newInstance();
