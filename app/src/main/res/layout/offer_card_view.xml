@@ -5,31 +5,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/card_view"
     android:layout_width="match_parent"
-    android:layout_height="200dp"
-    android:layout_marginTop="@dimen/activity_vertical_margin"
-    card_view:background="@drawable/plane"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:layout_marginTop="4dp"
     card_view:cardCornerRadius="4dp">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:orientation="vertical"
-        android:padding="@dimen/activity_vertical_margin">
+        android:orientation="vertical">
 
-        <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/brandTv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            tools:text="McDonalds" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatTextView
+                android:id="@+id/brandTv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/text_margin"
+                android:layout_toLeftOf="@+id/brandIv"
+                android:layout_toStartOf="@+id/brandIv"
+                android:textAllCaps="true"
+                android:textColor="@android:color/darker_gray"
+                tools:text="McDonalds" />
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/brandIv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/bigbazaar" />
+        </RelativeLayout>
+
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/brandOfferTv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@android:color/black"
             tools:text="Free Chicken McGrill on Rs.179" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/ic_location"
+            android:gravity="center"
+            android:text="Ameerpet"
+            android:textColor="@android:color/black" />
+
     </LinearLayout>
 
 
