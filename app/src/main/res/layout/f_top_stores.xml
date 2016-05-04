@@ -8,10 +8,11 @@
 
     <android.support.v7.widget.AppCompatImageView
         android:id="@+id/brandIv"
-        android:scaleType="centerInside"
         android:layout_width="64dp"
-        android:background="@drawable/shape_rounded_rect_transparent_white_border"
         android:layout_height="64dp"
+        android:background="@drawable/shape_rounded_rect_transparent_white_border"
+        android:padding="2dp"
+        android:scaleType="centerInside"
         android:src="@drawable/bigbazaar" />
 
     <LinearLayout
@@ -31,9 +32,9 @@
             android:layout_marginLeft="5dp"
             android:layout_toLeftOf="@+id/brandIv"
             android:layout_toStartOf="@+id/brandIv"
+            android:text="McDonalds"
             android:textAllCaps="true"
-            android:textColor="@android:color/darker_gray"
-            android:text="McDonalds" />
+            android:textColor="@android:color/darker_gray" />
 
         <android.support.v7.widget.AppCompatTextView
             android:id="@+id/location"
